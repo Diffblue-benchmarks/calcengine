@@ -1,8 +1,8 @@
 package com.diffblue.calcengine;
 
-public class Subtracter extends CalculateBase{
-    public Subtracter () { }
-    public Subtracter (double leftVal, double rightVal) {
+public class Subtractor extends CalculateBase{
+    public Subtractor () { }
+    public Subtractor (double leftVal, double rightVal) {
         super(leftVal, rightVal);
     }
     @Override

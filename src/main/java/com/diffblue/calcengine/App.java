@@ -3,9 +3,8 @@ package com.diffblue.calcengine;
 public class App {
 
         public static void main(String[] args) {
-            //        useMathEquation();
-            //        useCalculatorBase();
-            //        useCalculateHelper
+            useMathEquation();
+            useCalculatorBase();
 
 
             String[] statments = {
@@ -16,7 +15,7 @@ public class App {
 
 
             DynamicHelper helper = new DynamicHelper(new MathProcessing[] {
-                new Adder(),
+                    new Adder(),
                     new Power(),
                     new Multiplier()
             });
@@ -104,7 +103,7 @@ public class App {
                 CalculateBase[] calculators = {
                         new Divider(100.0d, 50.0d),
                         new Adder(25.0d, 92.0d),
-                        new Subtracter(225.0d, 17.0d),
+                        new Subtractor(225.0d, 17.0d),
                         new Multiplier(11.0d, 3.0d)
                 };
 

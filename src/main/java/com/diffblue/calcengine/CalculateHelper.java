@@ -38,12 +38,12 @@ public class CalculateHelper {
                 calculator = new Adder(leftValue, rightValue);
                 break;
             case Subtract:
-                calculator = new Subtracter(leftValue, rightValue);
+                calculator = new Subtractor(leftValue, rightValue);
                 break;
             case Divide:
                 calculator = new Divider(leftValue, rightValue);
                 break;
-            case Mutliply:
+            case Multiply:
                 calculator = new Multiplier(leftValue, rightValue);
                 break;
         }
@@ -59,8 +59,8 @@ public class CalculateHelper {
             command = MathCommand.Add;
         else if (commandString.equalsIgnoreCase(MathCommand.Subtract.toString()))
             command = MathCommand.Subtract;
-        else if (commandString.equalsIgnoreCase(MathCommand.Mutliply.toString()))
-            command = MathCommand.Mutliply;
+        else if (commandString.equalsIgnoreCase(MathCommand.Multiply.toString()))
+            command = MathCommand.Multiply;
         else if (commandString.equalsIgnoreCase(MathCommand.Divide.toString()))
             command = MathCommand.Divide;
     }
@@ -76,7 +76,7 @@ public class CalculateHelper {
             case Subtract :
                 symbol = SUBTRACT_SYMBOL;
                 break;
-            case Mutliply :
+            case Multiply :
                 symbol = MULTIPLY_SYMBOL;
                 break;
             case Divide:
