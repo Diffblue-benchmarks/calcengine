@@ -10,13 +10,15 @@ public class App {
 
             String[] statments = {
                     "add 25.0 92.0", // 25.0 + 92.0 = 117.0
-                    "power 5.0 3.0" // 5.0 ^ 3.0 = 125
+                    "power 5.0 3.0", // 5.0 ^ 3.0 = 125
+                    "multiply 200.0 2.0" // 200 * 2.0 = 400
             };
 
 
             DynamicHelper helper = new DynamicHelper(new MathProcessing[] {
                 new Adder(),
-                    new Power()
+                    new Power(),
+                    new Multiplier()
             });
 
             for(String statement:statments) {
